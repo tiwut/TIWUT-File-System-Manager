@@ -1,6 +1,6 @@
 # TIWUT File System Manager (Nexus Edition)
 
-Welcome to the **TIWUT File System Manager**, completely rewritten and optimized for the Nexus OS using the native `.nx` programming language. This application allows you to manage, create, and interact with `.tiwut` files (specialized file system archives) directly through a Zenity-powered GUI dashboard.
+Welcome to the **TIWUT File System Manager**, completely rewritten and optimized for the Nexus ` programming language. This application allows you to manage, create, and interact with `.tiwut` files (specialized file system archives) directly through a Zenity-powered GUI dashboard.
 
 ## Features
 
@@ -17,7 +17,7 @@ To run this application, you will need the `nexus` interpreter.
 1. Open your terminal.
 2. Execute the file using your compiled Nexus interpreter. For example:
    ```bash
-   ./nexus/interpreter new/main.nx
+   ./nexus/interpreter app/main.nx
    ```
    *(Ensure that the paths to your interpreter and the `main.nx` file are correct for your current working directory).*
 
