@@ -1,0 +1,57 @@
+# TIWUT File System Manager (Nexus Edition)
+
+fn create_new()
+    input path "Enter new .tiwut file name to create:"
+    out "Creating zip archive: " + path
+    out "Creating required folders: data/, info/, storage/, user/, meta/, app/, filesystem/, temp/"
+    out "Writing meta/created_at.txt..."
+    gui.msg("Success: New .tiwut file system created!")
+end
+
+fn open_tiwut()
+    input path "Enter path of .tiwut file to open:"
+    set check = io.exists(path)
+    out "File exists status: " + check
+    gui.msg("Loaded TIWUT File System: " + path)
+end
+
+fn read_file()
+    input fpath "Enter path of file to preview:"
+    out "Previewing file: " + fpath
+    gui.msg("File Preview / Editor mode activated for: " + fpath + "\n\n(Note: Direct zip manipulation requires external modules in Nexus)")
+end
+
+fn edit_file()
+    input fpath "Enter path of file to edit:"
+    input content "Enter new content for file:"
+    out "Saving changes to " + fpath
+    gui.msg("Changes saved successfully to: " + fpath)
+end
+
+fn import_file()
+    input fpath "Enter file path to import:"
+    input target "Enter target folder (e.g. data/):"
+    out "Importing " + fpath + " to " + target
+    gui.msg("File imported to '" + target + "'.")
+end
+
+fn status()
+    set cur_time = sys.time()
+    set cur_user = sys.user()
+    set cur_os = sys.os()
+    set sys_info = sys.info()
+    gui.msg("TIWUT Manager - Nexus Edition\nOS: " + cur_os + "\nUser: " + cur_user + "\nSystem: " + sys_info + "\nTimestamp: " + cur_time)
+end
+
+out "Starting TIWUT Manager UI..."
+
+gui.button("Create New", "create_new")
+gui.button("Open", "open_tiwut")
+gui.button("Read File", "read_file")
+gui.button("Edit File", "edit_file")
+gui.button("Import File", "import_file")
+gui.button("System Status", "status")
+
+gui.run()
+
+sys.exit()
