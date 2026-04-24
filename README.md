@@ -1,6 +1,6 @@
 # TIWUT File System Manager (Nexus Edition)
 
-Welcome to the **TIWUT File System Manager**, completely rewritten and optimized for the Nexus ` programming language. This application allows you to manage, create, and interact with `.tiwut` files (specialized file system archives) directly through a Zenity-powered GUI dashboard.
+Welcome to the **TIWUT File System Manager**, completely rewritten and optimized for the Nexus programming language. This application allows you to manage, create, and interact with `.tiwut` files (specialized file system archives) directly through a Zenity-powered GUI dashboard.
 
 ## Features
 
