@@ -21,7 +21,7 @@ To run this application, you will need the `nexus` interpreter.
    ```
    *(Ensure that the paths to your interpreter and the `main.nx` file are correct for your current working directory).*
 
-## 🚀 Available in Tiwut Launcher
+## Available in Tiwut Launcher
 
 Great news! You don't have to launch this from the command line manually. **This application is also available and fully integrated within the Tiwut Launcher!** 
 
